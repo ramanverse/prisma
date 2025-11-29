@@ -203,7 +203,7 @@ Please use Node.js >=22.5, Deno >=2.2 or Bun >=1.0 or ensure you have the \`bett
         typeof decodedPayload.tenant_id !== 'string'
       ) {
         throw new Error(
-          'Invalid/outdated "apiKey" query parameter in the provided "prisma+postgres" connection string.',
+          'Invalid/outdated `api_key` query parameter in the provided "prisma+postgres" connection string. Please create a new API key and use the new connection string OR use a direct TCP connection string instead.',
         )
       }
 
